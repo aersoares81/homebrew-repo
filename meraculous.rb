@@ -20,7 +20,7 @@ class Meraculous < Formula
 
   def install
     # Fix Could not find the following static Boost libraries: boost_thread
-    inreplace "src/c/CMakeLists.txt",
+    inreplace "RELEASES/Meraculous-v2.2.5/src/c/CMakeLists.txt",
       "set(Boost_USE_MULTITHREADED OFF)",
       "set(Boost_USE_MULTITHREADED ON)"
 
